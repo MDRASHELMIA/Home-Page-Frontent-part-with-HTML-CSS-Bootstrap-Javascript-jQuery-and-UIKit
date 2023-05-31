@@ -1,0 +1,374 @@
+/* Google Font CDN  */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+/* Common CSS Part */
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  background: #f2f2f2;
+  overflow-x: hidden;
+}
+/* NavBar CSS Start Here */
+nav{
+  background: #171c24;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 118px;
+  padding: 0 100px;
+}
+nav .logo{
+
+}
+nav .right-item{
+    display: flex;
+}
+nav .nav-items{
+  display: flex;
+  flex: 1;
+  padding: 0 0 0 40px;
+}
+nav .nav-items li{
+  list-style: none;
+  padding: 0 10px;
+}
+nav .login-button{
+    border-radius: 0;
+}
+nav .nav-items li a{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+}
+nav .nav-items li a:hover{
+  color: #ff3d00;
+}
+nav form{
+  display: flex;
+  height: 40px;
+  padding: 2px;
+  background: #ffffff;
+  min-width: 18%!important;
+  border-radius: 20px;
+  border: 1px solid rgba(155,155,155,0.2);
+}
+nav form .search-data{
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  color: black;
+  font-size: 17px;
+  border: none;
+  font-weight: 500;
+  background: none;
+}
+nav form button{
+  padding: 0 15px;
+  color: #fff;
+  font-size: 17px;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+nav form button:hover{
+  
+}
+nav .menu-icon,
+nav .cancel-icon,
+nav .search-icon{
+  width: 40px;
+  text-align: center;
+  margin: 0 50px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+nav .menu-icon span,
+nav .cancel-icon,
+nav .search-icon{
+  display: none;
+}
+@media (max-width: 1245px) {
+  nav{
+    padding: 0 50px;
+  }
+}
+@media (max-width: 1140px){
+  nav{
+    padding: 0px;
+  }
+  nav .logo{
+    flex: 2;
+    text-align: center;
+  }
+  nav .nav-items{
+    position: fixed;
+    z-index: 99;
+    top: 70px;
+    width: 100%;
+    left: -100%;
+    height: 100%;
+    padding: 10px 50px 0 50px;
+    text-align: center;
+    background: #14181f;
+    display: inline-block;
+    transition: left 0.3s ease;
+  }
+  nav .nav-items.active{
+    left: 0px;
+  }
+  nav .nav-items li{
+    line-height: 40px;
+    margin: 30px 0;
+  }
+  nav .nav-items li a{
+    font-size: 20px;
+  }
+  nav form{
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    opacity: 0;
+    pointer-events: none;
+    transition: top 0.3s ease, opacity 0.1s ease;
+  }
+  nav form.active{
+    top: 95px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  nav form:before{
+    position: absolute;
+    content: "";
+    top: -13px;
+    right: 0px;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    border: 10px solid transparent;
+    border-bottom-color: #1e232b;
+    margin: -20px 0 0;
+  }
+  nav form:after{
+    position: absolute;
+    content: '';
+    height: 60px;
+    padding: 2px;
+    background: #1e232b;
+    border-radius: 2px;
+    min-width: calc(100% + 20px);
+    z-index: -2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  nav .menu-icon{
+    display: block;
+  }
+  nav .search-icon,
+  nav .menu-icon span{
+    display: block;
+  }
+  nav .menu-icon span.hide,
+  nav .search-icon.hide{
+    display: none;
+  }
+  nav .cancel-icon.show{
+    display: block;
+  }
+}
+
+nav .logo.space{
+  color: red;
+  padding: 0 5px 0 0;
+}
+@media (max-width: 980px){
+  nav .menu-icon,
+  nav .cancel-icon,
+  nav .search-icon{
+    margin: 0 20px;
+  }
+  nav form{
+    right: 30px;
+  }
+}
+@media (max-width: 350px){
+  nav .menu-icon,
+  nav .cancel-icon,
+  nav .search-icon{
+    margin: 0 10px;
+    font-size: 16px;
+  }
+}
+/* End Nav Bar Section */
+
+/* Start Hero Section */
+.top_hero_section{
+    background: linear-gradient(rgb(58, 55, 55), rgb(92, 91, 91));
+    height: 600px;
+}
+.right_side_hero{
+    padding-top: 250px;
+}
+.find_prompt{
+    border-radius: none;
+    padding: 15px 20px;
+    background-color: #8bc8fa;
+    text-decoration: none;
+    color: white;
+}
+.button_group_hero{
+    padding: 80px 0;
+    margin-top: 150px 0;
+    
+}
+.box_main{
+    position: relative;
+    height: 560px;
+}
+.box_item_21{
+    margin-top:10px ;
+    position: absolute;
+    top: 10;
+    left: 60px;
+}
+.box_item_13{
+    position: absolute;
+    top: 180px;
+    left: 25px;
+}
+.box_item_12{
+    position: absolute;
+    top: 360px;
+    left: 10px;
+}
+.box_item_10{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Featcher Product Section css */
+
+
+#filter-buttons button {
+  border-radius: 3px;
+  background: #fff;
+  border-color: transparent;
+}
+
+#filter-buttons button:hover {
+  background: #ddd;
+}
+
+#filter-buttons button.active {
+  color: #fff;
+  background: #6c757d;
+}
+
+#filterable-cards .card {
+  
+  
+}
+
+#filterable-cards .card.hide {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #filterable-cards {
+    justify-content: center;
+  }
+
+  #filterable-cards .card {
+    width: calc(100% / 2 - 10px);
+  }
+}
+/* Hotest Section */
+.icon_hover:hover{
+  color: #8bc8fa;
+  background-color: #ff3d00;
+  border-radius: 50%;
+}
+.explore_all{
+  border-radius: none;
+  background-color: #8bc8fa;
+  padding: 20px 40px;
+  text-decoration: none;
+  color: black;
+  
+}
+/* Skills Section Start */
+.slide_count{
+  position: relative;
+}
+.slide_count_item{
+  position: absolute;
+  bottom: -25px;
+  left: 50px;
+}
+.slide_count_item2{
+  position: absolute;
+  bottom: -12px;
+  left: 75px;
+}
+/* Network Section Here */
+.bg_gradiant{
+  border-radius: 10px;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(118,153,142,1) 51%);
+  color: white;
+  font-size: 15px !important;
+}
+.position_count{
+  position: relative;
+}
+.registration_btn{
+  padding: 15px 40px;
+  border: 1px solid rgb(190, 189, 189);
+  width: 180px !important;
+  color: white;
+  
+}
+.img_three{
+  position: absolute;
+  right: -70px !important;
+  bottom: -170px !important;
+}
+.img_two{
+  position: absolute;
+  bottom: -60px;
+  right: -30px;
+}
+.img_one{
+  position: absolute;
+  bottom: -90px;
+  right: 200px;
+}
+.img_none{
+  position: absolute;
+  top: -80px;
+  right: 200px;
+}
+/* footer Start */
+.bg_img_setup{
+  width: 100%;
+  height: 450px;
+  background-image: url('../image/Background.png');
+  background-position: center;
+  background-size: cover;
+}
+.list_item{
+  text-decoration: none;
+  list-style: none;
+  padding: 20px 50px;
+}
